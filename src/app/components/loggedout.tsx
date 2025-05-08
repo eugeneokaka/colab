@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 function Loggedout() {
   return (
     <div>
@@ -8,7 +9,9 @@ function Loggedout() {
         <p className="text-lg mb-8">
           Your collaborative platform for everything.
         </p>
-        <Button variant={"default"}>get started</Button>
+        <Link href={"/signup"}>
+          <Button variant={"default"}>get started</Button>
+        </Link>
       </div>
     </div>
   );

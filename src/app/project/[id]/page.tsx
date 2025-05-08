@@ -55,6 +55,14 @@ export default function ProjectPage() {
           </Link>
         ))}
       </div>
+
+      <div className="mt-6 text-center">
+        <Link href={`/project/${id}/add-member`}>
+          <button className="bg-blue-500 text-white px-4 py-2 rounded-lg">
+            Add New Member
+          </button>
+        </Link>
+      </div>
     </div>
   );
 }
