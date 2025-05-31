@@ -9,8 +9,8 @@ const ICE_SERVERS: RTCConfiguration = {
 };
 
 export default function MeetingRoom() {
-  const { id: projectId } = useParams<{ id: string }>();
-  const meetingId = projectId; // because it's the second [id] segment now
+  const { messageId } = useParams<{ messageId: string }>();
+  const meetingId = messageId; // Now using messageId from URL
 
   const localVideoRef = useRef<HTMLVideoElement | null>(null);
   const remoteVideoRef = useRef<HTMLVideoElement | null>(null);
